@@ -1,22 +1,23 @@
-import "./factory-interface.js"
+console.log("running factory-a.js");
+
+import ClassAA from "./class-aa.js";
+import ClassAB from "./class-ab.js";
+import ClassNull from "./class-null.js";
+
+import FactoryInterface from "./factory-interface.js";
 
 class FactoryA extends FactoryInterface {
-   public Shape getShape(String shapeType){    
-      if(shapeType.equalsIgnoreCase("RECTANGLE")){
-         return new Rectangle();         
-      }else if(shapeType.equalsIgnoreCase("SQUARE")){
-         return new Square();
-      }  
-      return null;
-   }
-}
+  create_instance(instance_type, instance_name) {
+    console.log("Called " + instance_type + " : FactoryA");
 
-
-class ClassA extends ClassInterface {
-  constructor(instancename) {
-    super(instancename);
-  }
-  print_me() {
-    return "Called " + this.instancename + " : ClassA";
+    if(instance_type == "class-aa") {
+      return new ClassAA(instance_name);
+    } else if (instance_type == "class-ab") {
+      return new ClassAB(instance_name);
+    } else {
+      return new ClassNull(instance_name);
+    }
   }
 }
+
+export default FactoryA;

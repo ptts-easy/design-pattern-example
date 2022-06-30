@@ -1,27 +1,12 @@
-import "./class-interface.js"
+console.log("running factory-interface.js");
+
+import ClassInterface from "./class-interface.js";
 
 class FactoryInterface {
-  constructor(instancename) {
-    this.instancename = instancename;
-  }
-
-  print_me() {
-    return "Called " + this.instancename + " : ClassInterface";
+  create_instance(instance_type, instance_name) {
+    console.log("Called " + instance_type + " : FactoryInterface");
+    return new ClassInterface(instance_name);
   }
 }
 
-public abstract class AbstractFactory {
-   abstract Shape getShape(String shapeType) ;
-}
-
-public class ShapeFactory extends AbstractFactory {
-   @Override
-   public Shape getShape(String shapeType){    
-      if(shapeType.equalsIgnoreCase("RECTANGLE")){
-         return new Rectangle();         
-      }else if(shapeType.equalsIgnoreCase("SQUARE")){
-         return new Square();
-      }  
-      return null;
-   }
-}
+export default FactoryInterface;
