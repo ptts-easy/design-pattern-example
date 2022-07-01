@@ -4,8 +4,7 @@ import ElementInterface from "../collection/element-interface.js";
 
 class ServiceInterface extends ElementInterface {
   constructor(uid, instancename) {
-    this.uid = uid;
-    this.instancename = instancename;
+    super(uid, instancename);
   }
   getServiceName() {
     return this.uid;

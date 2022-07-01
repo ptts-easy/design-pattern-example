@@ -15,11 +15,11 @@ class CollectionInterface{
   updateElement(element) {
     this.elements.set(element.getUid(), element);
   }
-  hasElement(element) {
-    return this.elements.has(element.getUid());
+  hasElement(uid) {
+    return this.elements.has(uid);
   }
-  getElement(element) {
-    return this.elements.get(element.getUid());
+  getElement(uid) {
+    return this.elements.get(uid);
   }
   deleteElement(element) {
     this.elements.delete(element.getUid());

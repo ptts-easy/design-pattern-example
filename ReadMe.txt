@@ -5,5 +5,6 @@ Singleton : Singleton Pattern
 Collection : Transfer Object Pattern + Prototype Pattern
 Callback : 
 Parameter : 
+Decoractor :
 
 ServiceLocator : Singleton + Collection + Null Pattern + Builder Pattern

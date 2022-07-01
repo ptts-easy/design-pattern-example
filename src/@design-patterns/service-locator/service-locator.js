@@ -12,18 +12,31 @@ class ServiceLocator extends Singleton {
     this.cache = new Cache();
     this.context = new InitialContext();
   }
+  static getInstance(instancename){
+    if (Singleton.instance == undefined) {
+      Singleton.instance = new ServiceLocator("private");
 
+      console.log("Created Singleton Instance");
+    }
+
+    Singleton.instance.instancename = instancename;
+
+    return Singleton.instance;
+  }
   static getService(serviceName) {
     let serviceLocator = ServiceLocator.getInstance("serviceLocator");
 
     let service = serviceLocator.cache.getService(serviceName);
 
-    if (service != null) {
+    if (service != undefined) {
        return service;
     }
 
     service = serviceLocator.context.lookup(serviceName);
     serviceLocator.cache.addService(service);
+
+    //typeof service === 'object'
+    //service instanceof ServiceNull === true
 
     return service;
   }

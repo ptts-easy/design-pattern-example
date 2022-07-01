@@ -7,10 +7,10 @@ import CollectionInterface from "../collection/collection-interface.js";
 class Cache extends CollectionInterface {
   addService(service)
   {
-    updateElement(service);
+    this.updateElement(service);
   }
   getService(serviceName) {
-    return getElement(serviceName);
+    return this.getElement(serviceName);
   }
   printMe() {
     console.log("Called " + this.elements.size + " : Cache");
