@@ -6,7 +6,7 @@ class ClassAA extends ClassInterface {
   constructor(...args) {
     super(...args);
   }
-  print_me() {
+  printMe() {
     console.log("Called " + this.instancename + " : ClassAA");
   }
 }

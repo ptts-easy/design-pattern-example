@@ -8,8 +8,8 @@ class ElementInterface {
   getUid() {
     return this.uid;
   }
-  print_me() {
-    console.log("Called " + this.instancename + " : ElementInterface");
+  printMe() {
+    console.log("Called " + this.instancename + " : ElementInterface" + " (uid : " + this.uid + ")");
   }
 }
 

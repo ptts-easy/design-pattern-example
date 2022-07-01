@@ -1,25 +1,27 @@
 console.log("running singleton.js");
 
 class Singleton {
-  constructor(instancename) {
-    this.instancename = instancename;
-  }
-  print_me() {
-    console.log("Called " + this.instancename + " : Singleton");
-  }
-
   static instance;
 
+  constructor(instancename) {
+    if (Singleton.instance != undefined) {
+      console.log("Error : can not create Singleton class with " + instancename);
+    }
+    this.instancename = instancename;
+  }
   static getInstance(instancename){
-    if(this.instance == undefined) {
-      this.instance = new Singleton("");
+    if (Singleton.instance == undefined) {
+      Singleton.instance = new Singleton("private");
 
-      console.log("Created Singleton Instance");      
+      console.log("Created Singleton Instance");
     }
 
-    this.instance.instancename = instancename;
+    Singleton.instance.instancename = instancename;
 
-    return this.instance;
+    return Singleton.instance;
+  }
+  printMe() {
+    console.log("Called " + this.instancename + " : Singleton");
   }
 }
 

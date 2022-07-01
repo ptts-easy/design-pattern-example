@@ -1,14 +1,17 @@
 console.log("running collection-interface.js");
 
-import ElementInterface from "./element-interface.js";
+//import ElementInterface from "./element-interface.js";
 
-class CollectionInterface {
+class CollectionInterface{
   constructor() {
     this.elements = new Map();    
   }
   getAllElements() {
     return this.elements;
   }
+  setAllElements(elemetns) {
+    this.elements = elements;
+  }  
   updateElement(element) {
     this.elements.set(element.getUid(), element);
   }
@@ -21,8 +24,13 @@ class CollectionInterface {
   deleteElement(element) {
     this.elements.delete(element.getUid());
   }
-  print_me() {
-    console.log("Called " + this.elements + " : CollectionInterface");
+  printMe() {
+    console.log("Called " + this.elements.size + " : CollectionInterface");
+
+    this.elements.forEach ((value, key) => {
+//      console.log("    item uid : " + key + " value : " + value.getUid());
+      value.printMe();
+    })    
   }
 }
 

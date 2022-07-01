@@ -8,6 +8,10 @@ console.log("***** running all-test.js *****");
 
 //singleton_self_test();
 
-import collection_self_test from "./@design-patterns/collection/self-test.js";
+//import collection_self_test from "./@design-patterns/collection/self-test.js";
 
-collection_self_test();
+//collection_self_test();
+
+import service_locator_self_test from "./@design-patterns/service-locator/self-test.js";
+
+service_locator_self_test();

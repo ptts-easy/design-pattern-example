@@ -1,23 +1,18 @@
-console.log("running factory-a.js");
+console.log("running collection-name.js");
 
-import ClassAA from "./class-aa.js";
-import ClassAB from "./class-ab.js";
-import ClassNull from "./class-null.js";
+import ElementName from "./element-name.js";
 
-import FactoryInterface from "./factory-interface.js";
+import CollectionInterface from "./collection-interface.js";
 
-class FactoryA extends FactoryInterface {
-  create_instance(instance_type, instance_name) {
-    console.log("Called " + instance_type + " : FactoryA");
+class CollectionName extends CollectionInterface {
+  printMe() {
+    console.log("Called " + this.elements.size + " : CollectionName");
 
-    if(instance_type == "class-aa") {
-      return new ClassAA(instance_name);
-    } else if (instance_type == "class-ab") {
-      return new ClassAB(instance_name);
-    } else {
-      return new ClassNull(instance_name);
-    }
-  }
+    this.elements.forEach ((value, key) => {
+//      console.log("    item uid : " + key + " value : " + value.getName());
+      value.printMe();
+    })
+  }  
 }
 
-export default FactoryA;
+export default CollectionName;

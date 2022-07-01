@@ -11,10 +11,10 @@ class ElementName extends ElementInterface {
     this.name = name;
   }
   getName() {
-    this.name;
+    return this.name;
   }
-  print_me() {
-    console.log("Called " + this.instancename + " : ElementName");
+  printMe() {
+    console.log("Called " + this.instancename + " : ElementName" + " (uid : " + this.uid + ", name : " + this.name + ")");
   }
 }
 

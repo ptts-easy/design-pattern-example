@@ -4,7 +4,7 @@ class ClassInterface {
   constructor(instancename) {
     this.instancename = instancename;
   }
-  print_me() {
+  printMe() {
     console.log("Called " + this.instancename + " : ClassInterface");
   }
 }

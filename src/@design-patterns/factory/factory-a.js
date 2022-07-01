@@ -7,10 +7,10 @@ import ClassNull from "./class-null.js";
 import FactoryInterface from "./factory-interface.js";
 
 class FactoryA extends FactoryInterface {
-  create_instance(instance_type, instance_name) {
-    console.log("Called " + instance_type + " : FactoryA");
+  createInstance(instance_type, instance_name) {
+    console.log("Called " + instance_type + " : " + instance_name + " : FactoryA");
 
-    if(instance_type == "class-aa") {
+    if (instance_type == "class-aa") {
       return new ClassAA(instance_name);
     } else if (instance_type == "class-ab") {
       return new ClassAB(instance_name);
