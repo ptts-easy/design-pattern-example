@@ -8,6 +8,8 @@ import CollectionName from "./collection-name.js";
 
 export default function self_test(){
 
+  console.log("------- start collection-test -------");
+
   //test Elements
 
   let myItemI = new ElementInterface(1, "myItemI");
@@ -33,4 +35,6 @@ export default function self_test(){
   myCollectionName.updateElement(new ElementName(3, "name-3", "myItem03"));
   myCollectionName.updateElement(new ElementName(4, "name-4", "myItem04"));
   myCollectionName.printMe();
+
+  console.log("------- end collection-test -------");
 }

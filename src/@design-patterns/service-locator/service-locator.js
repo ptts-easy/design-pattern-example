@@ -1,30 +1,41 @@
 console.log("running service-locator.js");
 
-import Singleton from "../singleton/singleton.js";
-
 import InitialContext from "./initial-context.js";
 import Cache from "./cache.js";
 
-class ServiceLocator extends Singleton {
+class ServiceLocator {
+  static instance;
+
   constructor(instancename) {
-    super(instancename);
+    if (ServiceLocator.instance != undefined) {
+      console.log("Error : can not create Singleton class with " + instancename);
+//      throw "Error : can not create ServiceLocator class !";
+    }
+    this.instancename = instancename;
 
     this.cache = new Cache();
     this.context = new InitialContext();
   }
+
   static getInstance(instancename){
-    if (Singleton.instance == undefined) {
-      Singleton.instance = new ServiceLocator("private");
+
+    console.log("ServiceLocator::getInstance");
+
+    if (ServiceLocator.instance == undefined) {
+      ServiceLocator.instance = new ServiceLocator("private");
 
       console.log("Created Singleton Instance");
     }
 
-    Singleton.instance.instancename = instancename;
+    ServiceLocator.instance.instancename = instancename;
 
-    return Singleton.instance;
+    return ServiceLocator.instance;
   }
+
   static getService(serviceName) {
     let serviceLocator = ServiceLocator.getInstance("serviceLocator");
+
+    console.log(serviceLocator.context);
 
     let service = serviceLocator.cache.getService(serviceName);
 

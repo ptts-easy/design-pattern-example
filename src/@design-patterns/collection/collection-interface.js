@@ -4,7 +4,7 @@ console.log("running collection-interface.js");
 
 class CollectionInterface{
   constructor() {
-    this.elements = new Map();    
+    this.elements = new Map();
   }
   getAllElements() {
     return this.elements;

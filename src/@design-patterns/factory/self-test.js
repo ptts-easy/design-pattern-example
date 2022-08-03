@@ -14,6 +14,7 @@ import FactoryProducer from "./factory-producer.js";
 
 export default function self_test(){
 
+  console.log("------- start factory-test -------");
   //test Classes
 
   let myClassI = new ClassInterface("myClassI");
@@ -72,4 +73,6 @@ export default function self_test(){
   let myFactoryPC =  myFactoryProducer.getFactory("factory-c", "myFactoryPC");
   let myClassPC = myFactoryPC.createInstance("class-c", "myClassPC");
   myClassPC.printMe();
+
+  console.log("------- end factory-test -------");
 }

@@ -6,6 +6,7 @@ class Singleton {
   constructor(instancename) {
     if (Singleton.instance != undefined) {
       console.log("Error : can not create Singleton class with " + instancename);
+//      throw "Error : can not create Singleton class !";
     }
     this.instancename = instancename;
   }

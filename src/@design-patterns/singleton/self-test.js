@@ -2,7 +2,11 @@ console.log("***** running singleton self-test.js *****");
 
 import Singleton from "./singleton.js";
 
+import Run from "./singleton_1.js";
+
 export default function self_test(){
+
+  console.log("------- start singleton-test -------");
 
   let myInstance1 = Singleton.getInstance("myInstance1");
   myInstance1.printMe();
@@ -19,4 +23,8 @@ export default function self_test(){
   let myInstance4 = new Singleton("myInstance4");
 
   myInstance4.printMe();
+
+  console.log("------- end singleton-test -------");
+
+  Run();
 }

@@ -5,13 +5,16 @@ import ServiceInterface from "./service-interface.js";
 import CollectionInterface from "../collection/collection-interface.js";
 
 class Cache extends CollectionInterface {
+
   addService(service)
   {
     this.updateElement(service);
   }
+
   getService(serviceName) {
     return this.getElement(serviceName);
   }
+  
   printMe() {
     console.log("Called " + this.elements.size + " : Cache");
 
