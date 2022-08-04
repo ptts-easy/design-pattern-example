@@ -2,6 +2,8 @@ console.log("***** running singleton self-test.js *****");
 
 import Singleton from "./singleton.js";
 
+import SingleObject from "./single-object.js";
+
 import Run from "./singleton_1.js";
 
 export default function self_test(){
@@ -24,6 +26,16 @@ export default function self_test(){
 
   myInstance4.printMe();
 
+  console.log("------- end singleton-test -------");
+
+  console.log("------- start singleton-test -------");
+  let object_1 = new SingleObject();
+
+  //Get the only object available
+  let object_2 = SingleObject.getInstance();
+
+  //show the message
+  object_2.showMessage();
   console.log("------- end singleton-test -------");
 
   Run();

@@ -12,9 +12,14 @@ import FactoryA from "./factory-a.js";
 import FactoryB from "./factory-b.js";
 import FactoryProducer from "./factory-producer.js";
 
+import FactoryProducer_1 from "./factory-producer_1.js";
+
+import Run from "./abstract-factory_1.js";
+
 export default function self_test(){
 
   console.log("------- start factory-test -------");
+
   //test Classes
 
   let myClassI = new ClassInterface("myClassI");
@@ -75,4 +80,31 @@ export default function self_test(){
   myClassPC.printMe();
 
   console.log("------- end factory-test -------");
+ 
+  console.log("------- start factory-test -------");
+ 
+  //get shape factory
+  let shapeFactory = FactoryProducer_1.getFactory(false);
+  //get an object of Shape Rectangle
+  let shape1 = shapeFactory.getShape("RECTANGLE");
+  //call draw method of Shape Rectangle
+  shape1.draw();
+  //get an object of Shape Square 
+  let shape2 = shapeFactory.getShape("SQUARE");
+  //call draw method of Shape Square
+  shape2.draw();
+  //get shape factory
+  let shapeFactory1 = FactoryProducer_1.getFactory(true);
+  //get an object of Shape Rectangle
+  let shape3 = shapeFactory1.getShape("RECTANGLE");
+  //call draw method of Shape Rectangle
+  shape3.draw();
+  //get an object of Shape Square 
+  let shape4 = shapeFactory1.getShape("SQUARE");
+  //call draw method of Shape Square
+  shape4.draw();
+
+  console.log("------- end factory-test -------");
+
+  Run();
 }
