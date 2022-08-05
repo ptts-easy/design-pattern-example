@@ -9,7 +9,7 @@
  */
 
 console.log("======= start all-test =======");
-/*
+
 console.log("======= 01 : Abstract Factory Design Pattern =======");
 
 import abstract_factory_self_test from "./@design-patterns/abstract-factory/self-test.js";
@@ -112,11 +112,11 @@ import memento_self_test from "./@design-patterns/memento/self-test.js";
 
 memento_self_test();
 
-console.log("======= 18: state Design Pattern =======");
+console.log("======= 18: Observer Design Pattern =======");
 
-import state_self_test from "./@design-patterns/state/self-test.js";
+import observer_self_test from "./@design-patterns/observer/self-test.js";
 
-state_self_test();
+observer_self_test();
 
 console.log("======= 19: State Design Pattern =======");
 
@@ -124,25 +124,34 @@ import state_self_test from "./@design-patterns/state/self-test.js";
 
 state_self_test();
 
-console.log("======= 20: template Design Pattern =======");
+console.log("======= 20: Strategy Design Pattern =======");
 
-import template_self_test from "./@design-patterns/template/self-test.js";
+import strategy_self_test from "./@design-patterns/strategy/self-test.js";
 
-template_self_test();
-*/
+strategy_self_test();
+
 console.log("======= 21: Template Design Pattern =======");
 
 import template_self_test from "./@design-patterns/template/self-test.js";
 
 template_self_test();
 
-/*
+console.log("======= 22: Visitor Design Pattern =======");
+
+import visitor_self_test from "./@design-patterns/visitor/self-test.js";
+
+visitor_self_test();
+
+console.log("======= 30: Visitor Design Pattern =======");
+
 import collection_self_test from "./@design-patterns/collection/self-test.js";
 
 collection_self_test();
 
+console.log("======= 31: Visitor Design Pattern =======");
+
 import service_locator_self_test from "./@design-patterns/service-locator/self-test.js";
 
 service_locator_self_test();
-*/
+
 console.log("======= end all-test =======");
