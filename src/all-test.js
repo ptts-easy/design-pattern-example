@@ -117,12 +117,19 @@ console.log("======= 18: state Design Pattern =======");
 import state_self_test from "./@design-patterns/state/self-test.js";
 
 state_self_test();
-*/
+
 console.log("======= 19: State Design Pattern =======");
 
 import state_self_test from "./@design-patterns/state/self-test.js";
 
 state_self_test();
+*/
+
+console.log("======= 19: Strategy Design Pattern =======");
+
+import strategy_self_test from "./@design-patterns/strategy/self-test.js";
+
+strategy_self_test();
 
 /*
 import collection_self_test from "./@design-patterns/collection/self-test.js";
