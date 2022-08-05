@@ -87,12 +87,18 @@ console.log("======= 13: Command Design Pattern =======");
 import command_self_test from "./@design-patterns/command/self-test.js";
 
 command_self_test();
-*/
+
 console.log("======= 14: Interpreter Design Pattern =======");
 
 import interpreter_self_test from "./@design-patterns/interpreter/self-test.js";
 
 interpreter_self_test();
+*/
+console.log("======= 15: Interator Design Pattern =======");
+
+import iterator_self_test from "./@design-patterns/iterator/self-test.js";
+
+iterator_self_test();
 
 /*
 import collection_self_test from "./@design-patterns/collection/self-test.js";
@@ -103,9 +109,6 @@ import service_locator_self_test from "./@design-patterns/service-locator/self-t
 
 service_locator_self_test();
 
-import iterator_self_test from "./@design-patterns/iterator/self-test.js";
-
-iterator_self_test();
 
 
 */
