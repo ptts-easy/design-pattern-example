@@ -39,12 +39,18 @@ console.log("======= 05 : Adapter Design Pattern =======");
 import adapter_self_test from "./@design-patterns/adapter/self-test.js";
 
 adapter_self_test();
-*/
+
 console.log("======= 06 : Bridge Design Pattern =======");
 
 import bridge_self_test from "./@design-patterns/bridge/self-test.js";
 
 bridge_self_test();
+*/
+console.log("======= 07 : Composite Design Pattern =======");
+
+import composite_self_test from "./@design-patterns/composite/self-test.js";
+
+composite_self_test();
 
 /*
 import collection_self_test from "./@design-patterns/collection/self-test.js";
