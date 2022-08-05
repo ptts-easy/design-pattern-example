@@ -69,12 +69,24 @@ console.log("======= 10: Flyweight Design Pattern =======");
 import flyweight_self_test from "./@design-patterns/flyweight/self-test.js";
 
 flyweight_self_test();
-*/
+
 console.log("======= 11: Proxy Design Pattern =======");
 
 import proxy_self_test from "./@design-patterns/proxy/self-test.js";
 
 proxy_self_test();
+
+console.log("======= 12: Chain of Responsibility Design Pattern =======");
+
+import chain_self_test from "./@design-patterns/chain/self-test.js";
+
+chain_self_test();
+*/
+console.log("======= 13: Command Design Pattern =======");
+
+import command_self_test from "./@design-patterns/command/self-test.js";
+
+command_self_test();
 
 /*
 import collection_self_test from "./@design-patterns/collection/self-test.js";
@@ -89,8 +101,6 @@ import iterator_self_test from "./@design-patterns/iterator/self-test.js";
 
 iterator_self_test();
 
-import chain_self_test from "./@design-patterns/chain/self-test.js";
 
-chain_self_test();
 */
 console.log("======= end all-test =======");
