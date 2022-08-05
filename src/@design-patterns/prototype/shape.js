@@ -12,7 +12,7 @@ class Shape {
   getId() {
     return this.id;
   }
-  setId(String id) {
+  setId(id) {
     this.id = id;
   }
   clone() {
@@ -20,7 +20,8 @@ class Shape {
 //    let clone = { ...this };
 
     // "Object.assign"
-    let clone = Object.assign({}, this);
+//    let clone = Object.assign({}, this);
+    let clone = Object.assign(Object.create(Object.getPrototypeOf(this)), this);
     return clone;
   }
 }

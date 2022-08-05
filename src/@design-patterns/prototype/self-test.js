@@ -10,13 +10,14 @@ export default function self_test(){
 
   ShapeCache.loadCache();
 
-  let clonedShape = (Shape) ShapeCache.getShape("1");
+  let clonedShape = ShapeCache.getShape("1");
+  console.log(clonedShape);
   console.log("Shape : " + clonedShape.getType());   
 
-  let clonedShape2 = (Shape) ShapeCache.getShape("2");
+  let clonedShape2 = ShapeCache.getShape("2");
   console.log("Shape : " + clonedShape2.getType());    
 
-  let clonedShape3 = (Shape) ShapeCache.getShape("3");
+  let clonedShape3 = ShapeCache.getShape("3");
   console.log("Shape : " + clonedShape3.getType());  
 
   console.log("------- end prototype-test -------");
