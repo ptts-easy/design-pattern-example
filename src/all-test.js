@@ -63,12 +63,18 @@ console.log("======= 09: Facade Design Pattern =======");
 import facade_self_test from "./@design-patterns/facade/self-test.js";
 
 facade_self_test();
-*/
+
 console.log("======= 10: Flyweight Design Pattern =======");
 
 import flyweight_self_test from "./@design-patterns/flyweight/self-test.js";
 
 flyweight_self_test();
+*/
+console.log("======= 11: Proxy Design Pattern =======");
+
+import proxy_self_test from "./@design-patterns/proxy/self-test.js";
+
+proxy_self_test();
 
 /*
 import collection_self_test from "./@design-patterns/collection/self-test.js";
