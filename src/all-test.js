@@ -57,12 +57,18 @@ console.log("======= 08: Decorator Design Pattern =======");
 import decorator_self_test from "./@design-patterns/decorator/self-test.js";
 
 decorator_self_test();
-*/
+
 console.log("======= 09: Facade Design Pattern =======");
 
 import facade_self_test from "./@design-patterns/facade/self-test.js";
 
 facade_self_test();
+*/
+console.log("======= 10: Flyweight Design Pattern =======");
+
+import flyweight_self_test from "./@design-patterns/flyweight/self-test.js";
+
+flyweight_self_test();
 
 /*
 import collection_self_test from "./@design-patterns/collection/self-test.js";
