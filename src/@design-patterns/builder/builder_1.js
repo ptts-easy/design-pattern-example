@@ -65,7 +65,7 @@ function Truck() {
 
 export default function run() {
 
-  console.log("------- start chain-test -------");
+  console.log("------- start builder-test -------");
 
   var shop = new Shop();
   var carBuilder = new CarBuilder();
@@ -76,5 +76,5 @@ export default function run() {
   car.say();
   truck.say();
 
-  console.log("------- end chain-test -------");
+  console.log("------- end builder-test -------");
 }

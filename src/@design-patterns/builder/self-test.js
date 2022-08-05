@@ -6,7 +6,7 @@ import Run from "./builder_1.js";
 
 export default function self_test(){
 
-  console.log("------- start chain-test -------");
+  console.log("------- start builder-test -------");
 
   let mealBuilder = new MealBuilder();
 
@@ -20,7 +20,7 @@ export default function self_test(){
   nonVegMeal.showItems();
   console.log("Total Cost: " + nonVegMeal.getCost());
 
-  console.log("------- end chain-test -------");
+  console.log("------- end builder-test -------");
 
   Run();
 }

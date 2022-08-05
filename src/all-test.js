@@ -14,15 +14,18 @@ import abstract_factory_self_test from "./@design-patterns/abstract-factory/self
 
 abstract_factory_self_test();
 
-
 import singleton_self_test from "./@design-patterns/singleton/self-test.js";
 
 singleton_self_test();
-*/
 
 import builder_self_test from "./@design-patterns/builder/self-test.js";
 
 builder_self_test();
+
+*/
+import prototype_self_test from "./@design-patterns/prototype/self-test.js";
+
+prototype_self_test();
 
 /*
 import collection_self_test from "./@design-patterns/collection/self-test.js";
