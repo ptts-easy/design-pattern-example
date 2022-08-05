@@ -111,12 +111,18 @@ console.log("======= 17: Memento Design Pattern =======");
 import memento_self_test from "./@design-patterns/memento/self-test.js";
 
 memento_self_test();
+
+console.log("======= 18: state Design Pattern =======");
+
+import state_self_test from "./@design-patterns/state/self-test.js";
+
+state_self_test();
 */
-console.log("======= 18: Observer Design Pattern =======");
+console.log("======= 19: State Design Pattern =======");
 
-import observer_self_test from "./@design-patterns/observer/self-test.js";
+import state_self_test from "./@design-patterns/state/self-test.js";
 
-observer_self_test();
+state_self_test();
 
 /*
 import collection_self_test from "./@design-patterns/collection/self-test.js";
