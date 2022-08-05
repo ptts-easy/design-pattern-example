@@ -93,12 +93,30 @@ console.log("======= 14: Interpreter Design Pattern =======");
 import interpreter_self_test from "./@design-patterns/interpreter/self-test.js";
 
 interpreter_self_test();
-*/
+
 console.log("======= 15: Interator Design Pattern =======");
 
 import iterator_self_test from "./@design-patterns/iterator/self-test.js";
 
 iterator_self_test();
+
+console.log("======= 16: Mediator Design Pattern =======");
+
+import mediator_self_test from "./@design-patterns/mediator/self-test.js";
+
+mediator_self_test();
+
+console.log("======= 17: Memento Design Pattern =======");
+
+import memento_self_test from "./@design-patterns/memento/self-test.js";
+
+memento_self_test();
+*/
+console.log("======= 18: Observer Design Pattern =======");
+
+import observer_self_test from "./@design-patterns/observer/self-test.js";
+
+observer_self_test();
 
 /*
 import collection_self_test from "./@design-patterns/collection/self-test.js";
@@ -108,8 +126,5 @@ collection_self_test();
 import service_locator_self_test from "./@design-patterns/service-locator/self-test.js";
 
 service_locator_self_test();
-
-
-
 */
 console.log("======= end all-test =======");

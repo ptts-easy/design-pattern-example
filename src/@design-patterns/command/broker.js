@@ -7,9 +7,13 @@ class Broker {
     this.orderList.push(order);
   }
   placeOrders() {
-    this.orderList.forEach((order) => {
+    for (let order of this.orderList) {
       order.execute();
-    });
+    }
+    
+//    this.orderList.forEach((order) => {
+//      order.execute();
+//    });
     this.orderList = [];
   }
 }

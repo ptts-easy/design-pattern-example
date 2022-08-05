@@ -8,18 +8,28 @@ class Meal {
   getCost() {
     let cost = 0.0;
 
-    this.items.forEach((item) => {
+    for (let item of this.items) {
       cost += item.price();
-    });
+    }
+
+//    this.items.forEach((item) => {
+//      cost += item.price();
+//    });
 
     return cost;
   }
   showItems() {
-    this.items.forEach((item) => {
+    for (let item of this.items) {
       console.log("Item : " + item.name());
       console.log(", Packing : " + item.packing().pack());
       console.log(", Price : " + item.price());
-    });
+    }
+
+//    this.items.forEach((item) => {
+//      console.log("Item : " + item.name());
+//      console.log(", Packing : " + item.packing().pack());
+//      console.log(", Price : " + item.price());
+//    });
   }
 }
 
