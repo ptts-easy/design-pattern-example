@@ -3,7 +3,7 @@ class Shape {
   constructor() {
     this.id = "";
     this.type = "";
-  }  
+  }
   draw() {
   }
   getType() {
