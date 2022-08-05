@@ -123,13 +123,18 @@ console.log("======= 19: State Design Pattern =======");
 import state_self_test from "./@design-patterns/state/self-test.js";
 
 state_self_test();
+
+console.log("======= 20: template Design Pattern =======");
+
+import template_self_test from "./@design-patterns/template/self-test.js";
+
+template_self_test();
 */
+console.log("======= 21: Template Design Pattern =======");
 
-console.log("======= 19: Strategy Design Pattern =======");
+import template_self_test from "./@design-patterns/template/self-test.js";
 
-import strategy_self_test from "./@design-patterns/strategy/self-test.js";
-
-strategy_self_test();
+template_self_test();
 
 /*
 import collection_self_test from "./@design-patterns/collection/self-test.js";
