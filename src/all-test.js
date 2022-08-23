@@ -142,13 +142,37 @@ import visitor_self_test from "./@design-patterns/visitor/self-test.js";
 
 visitor_self_test();
 
-console.log("======= 30: Visitor Design Pattern =======");
+console.log("======= 23: MVC Design Pattern =======");
+
+import mvc_self_test from "./@design-patterns/mvc/self-test.js";
+
+mvc_self_test();
+
+console.log("======= 24: Front Controller Design Pattern =======");
+
+import front_controller_self_test from "./@design-patterns/front-controller/self-test.js";
+
+front_controller_self_test();
+
+console.log("======= 25: Intercepting Filter Design Pattern =======");
+
+import intercepting_filter_self_test from "./@design-patterns/intercepting-filter/self-test.js";
+
+intercepting_filter_self_test();
+
+console.log("======= 26: Transfer Object Design Pattern =======");
+
+import transfer_object_self_test from "./@design-patterns/transfer-object/self-test.js";
+
+transfer_object_self_test();
+
+console.log("======= 30: Collection Design Pattern =======");
 
 import collection_self_test from "./@design-patterns/collection/self-test.js";
 
 collection_self_test();
 
-console.log("======= 31: Visitor Design Pattern =======");
+console.log("======= 31: Service Locator Design Pattern =======");
 
 import service_locator_self_test from "./@design-patterns/service-locator/self-test.js";
 
